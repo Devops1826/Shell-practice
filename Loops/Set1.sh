@@ -24,7 +24,6 @@ fi
     dnf install $package &>> $LOGS_FILE
     if[ $2 -ne 0]; then
         dnf install $package -y &>> $LOGS_FILE
-        VALIDATE "Installing $package" $?
     else
         echo -e "$TIMESTAMP [INFO] $package already installed .... $Y SKIPPING $N"
     fi
