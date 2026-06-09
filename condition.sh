@@ -6,3 +6,5 @@ if[  $NUMBER -ge 20]; then
     echo"Given Number $NUMBER is greater than or equal to 20"
 
 fi
+
+

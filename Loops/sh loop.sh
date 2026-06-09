@@ -24,7 +24,7 @@ VALIDATE(){
 }
  for package in $@
  do
-    echo"Instakking $package"
+    echo"$TIMESTAMP [INFO] Installiing $package"
     dnf install $package &>> $LOGS_FILE
     if[ $2 -ne 0]; then
         dnf install $package -y &>> $LOGS_FILE
